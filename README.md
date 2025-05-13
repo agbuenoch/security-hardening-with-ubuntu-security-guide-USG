@@ -1,6 +1,6 @@
 # security-hardening-with-ubuntu-security-guide-USG
 
-Check out **[screenshots](screenshots)** folder for the screenshots of the entire process.
+Check out the **[screenshots](screenshots)** folder for the screenshots of the entire process.
 
 In the article "Installing Ubuntu Server 'Installer Image’ On VMware Workstation Pro, I walked through installing Ubuntu Server on VMware Workstation Pro. This article will guide you through the fundamental steps to secure the Ubuntu server before using it for log analysis, Wazuh management, or as a monitored endpoint.
 
@@ -15,44 +15,27 @@ The Ubuntu Pro client is a tool designed to automate access to Ubuntu Pro servic
 Pre-requisite:
 You must have or enable “Ubuntu Pro” as a prerequisite for using Ubuntu Security Guide (USG), this is because USG is one of the services of “Ubuntu Pro”.
 
+`When you need help on how to install any command in Bash, and you have no idea how to do it, just type:
+<command name> 
+or 
+<command name> --help
+Replace <command name> with the actual command you want to install. The terminal will provide you with the official/appropriate name and command to install it.`
+
+When you need help on how to install any command in Bash, and you have no idea how to do it, just type <command name> or <command name>--help, replacing <command name> with the actual command you want to install. The terminal will provide you with the official/appropriate name and command to install it.
+
+## Step 1: Register for Ubuntu Pro and attach it to your Ubuntu Server.
+- Go to: https://ubuntu.com/pro/subscribe
+- Sign in or create a free Ubuntu One account.
+- Generate your free personal-use token (valid for up to 5 machines).
+- Copy the token. This is used when attaching Ubuntu Pro to the Ubuntu server.
+
+The above step has been explicitly explained in the article, Installing Ubuntu Server 'Installer Image’ on VMware Workstation Pro.
+
+Step 2: Update and Upgrade Your System.
+Run the green command to update and upgrade the Ubuntu server. As the arrow indicates, provide the Ubuntu server user password.
+
 `When you need help on how to install any command in Bash, and you have no idea how to do it, just type <command name> or <command name>--help, replacing <command name> with the actual command you want to install. The terminal will provide you with the official/appropriate name and command to install it.`
-
-When you need help on how to install any command in Bash, and you have no idea how to do it, just type <command name> or <command name>--help, replacing <command name> with the actual command you want to install. The terminal will provide you with the official/appropriate name and command to install it.
-
-Step 1: Register for Ubuntu Pro and attach it to your Ubuntu Server.
-Go to: https://ubuntu.com/pro/subscribe
-
-Sign in or create a free Ubuntu One account.
-
-Generate your free personal-use token (valid for up to 5 machines).
-
-Copy the token – This is used when attaching Ubuntu Pro to the Ubuntu server.
-
-The above step has been explicitly explained in the article, Installing Ubuntu Server 'Installer Image’ on VMware Workstation Pro.
-
-Step 2: Update and Upgrade Your System.
-Run the green command to update and upgrade the Ubuntu server. As the arrow indicates, provide the Ubuntu server user password.
-
-When you need help on how to install any command in Bash, and you have no idea how to do it, just type <command name> or <command name>--help, replacing <command name> with the actual command you want to install. The terminal will provide you with the official/appropriate name and command to install it.
-
-Step 1: Register for Ubuntu Pro and attach it to your Ubuntu Server.
-Go to: https://ubuntu.com/pro/subscribe
-
-Sign in or create a free Ubuntu One account.
-
-Generate your free personal-use token (valid for up to 5 machines).
-
-Copy the token – This is used when attaching Ubuntu Pro to the Ubuntu server.
-
-The above step has been explicitly explained in the article, Installing Ubuntu Server 'Installer Image’ on VMware Workstation Pro.
-
-Step 2: Update and Upgrade Your System.
-Run the green command to update and upgrade the Ubuntu server. As the arrow indicates, provide the Ubuntu server user password.
-
-Minimize image
-Edit image
-Delete image
-
+**[step2A1](step2A1)**
 
 Step 3: Install “Ubuntu Pro Client”.
 The “Ubuntu Pro client” is a command-line utility (pro) that connects your Ubuntu machine to Ubuntu Pro services like Extended Security Maintenance (ESM), Compliance tools like USG (Ubuntu Security Guide), Federal Information Processing Standards (FIPS) 140-2 certified cryptographic modules (for enterprise/government compliance), and more.
@@ -201,3 +184,9 @@ The 1st arrow points to the target system audited, the 2nd arrow points to the u
 
 The post-hardening audit results show significantly improved CIS Level 1 Server Benchmark compliance, with only 9 rules, results that failed and a 92.24% success rate.
 
+## LinkedIn Article.
+- [File Sharing Using scp and rsync](https://www.linkedin.com/pulse/file-sharing-using-scp-rsync-enoch-agbu-yeynf/)
+
+## Connect with me.
+[🔗 LinkedIn](https://www.linkedin.com/in/agbuenoch)<br>
+[🔗 X](https://www.x.com/agbuenoch)
