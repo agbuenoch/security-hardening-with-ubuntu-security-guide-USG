@@ -40,76 +40,91 @@ View: **[step2A1](screenshots/step2A1.png)**
 ## Step 3: Install “Ubuntu Pro Client”.
 The “Ubuntu Pro client” is a command-line utility (pro) that connects your Ubuntu machine to Ubuntu Pro services like Extended Security Maintenance (ESM), Compliance tools like USG (Ubuntu Security Guide), Federal Information Processing Standards (FIPS) 140-2 certified cryptographic modules (for enterprise/government compliance), and more.
 
-Run the command in green and provide the Ubuntu server user password when prompted, as pointed to by the 1st arrow. The 2nd, 3rd and 4th arrows point to the sequential steps for the installation of the Ubuntu Pro Client.
+Run the command in green and provide the Ubuntu server user password when prompted, as pointed to by the 1st arrow. The 2nd, 3rd and 4th arrows point to the sequential steps for the installation of the Ubuntu Pro Client.<br>
 View: **[step3A1](screenshots/step3A1.png)**
 
 After it successfully installs the “pro” command-line tool. Let's verify/confirm that the “pro” command is installed in our terminal.
 
-As pointed out by the 1st arrow, if the command is installed, the terminal will present you with the usage guide on how to use the command, and other vital information about the command as pointed to by the 2nd arrow.
+As pointed out by the 1st arrow, if the command is installed, the terminal will present you with the usage guide on how to use the command, and other vital information about the command as pointed to by the 2nd arrow.<br>
 View: **[step3A2](screenshots/step3A2.png)**
 
-Step 4: Verify and view all Ubuntu Pro Services.
-Let's view all the Ubuntu Pro services that Ubuntu Pro clients can access by running the command in green. As pointed to by the 1st arrow, the esm-apps service is enabled (This was done by completing step 1 above), which offers the Ubuntu system an extended 10+ years of security maintenance. The USG service is currently disabled as pointed to by the 2nd arrow. The 3rd arrow shows how to enable any of the Ubuntu Pro services, which can be achieved by using the Ubuntu Pro client (i.e pro command). This must be enabled so that we can use the service to perform an audit and fix our Ubuntu system following the CIS benchmark security. The 4th arrow points to the statement that we are using or subscribed to Ubuntu Pro on this Ubuntu system.
+## Step 4: Verify and view all Ubuntu Pro Services.
+Let's view all the Ubuntu Pro services that Ubuntu Pro clients can access by running the command in green. As pointed to by the 1st arrow, the esm-apps service is enabled (This was done by completing step 1 above), which offers the Ubuntu system an extended 10+ years of security maintenance. The USG service is currently disabled as pointed to by the 2nd arrow. The 3rd arrow shows how to enable any of the Ubuntu Pro services, which can be achieved by using the Ubuntu Pro client (i.e pro command). This must be enabled so that we can use the service to perform an audit and fix our Ubuntu system following the CIS benchmark security. The 4th arrow points to the statement that we are using or subscribed to Ubuntu Pro on this Ubuntu system.<br>
+View: **[step4A1](screenshots/step4A1.png)**
 
 `Ensure esm and usg are available or enabled.`
 
-Step 5: Enable and install the USG Tool.
+## Step 5: Enable and install the USG Tool.
 From the screenshot above, you can see that the “usg” Ubuntu Pro service is disabled as pointed to by the 2nd arrow. Let’s enable the "usg" service.
 
-Run the command in green, and provide the Ubuntu server user password when prompted, as pointed to by the 1st arrow. The 2nd arrow points to the statement that confirms USG (Ubuntu Security Guide) is enabled.
+Run the command in green, and provide the Ubuntu server user password when prompted, as pointed to by the 1st arrow. The 2nd arrow points to the statement that confirms USG (Ubuntu Security Guide) is enabled.<br>
+View: **[step5A1](screenshots/step5A1.png)**
 
-This will enable the Ubuntu Security Guide (USG) utility. Checking the Ubuntu Pro Services again this time shows that the USG service is enabled as pointed to by the arrows below.
+This will enable the Ubuntu Security Guide (USG) utility. Checking the Ubuntu Pro Services again this time shows that the USG service is enabled as pointed to by the arrows below.<br>
+View: **[step5A2](screenshots/step5A2.png)**
 
 But I do not currently have the “usg” command installed yet on my Ubuntu server terminal, this will result in an error if you try to use the command.
 
-Let’s first confirm if the “usg” command is NOT installed. As pointed to by the 1st arrow, the command is not found; meanwhile, the 2nd arrow points to the statement that provides the command to install the intended command, i.e usg.
+Let’s first confirm if the “usg” command is NOT installed. As pointed to by the 1st arrow, the command is not found; meanwhile, the 2nd arrow points to the statement that provides the command to install the intended command, i.e usg.<br>
+View: **[step5A3](screenshots/step5A3.png)**
 
-Run the command in green to install the “usg” command. As pointed by the 1st arrow, provide the Ubuntu server password when prompted.
+Run the command in green to install the “usg” command. As pointed by the 1st arrow, provide the Ubuntu server password when prompted.<br>
+View: **[step5A4](screenshots/step5A4.png)**
 
-Let’s verify it is installed. As pointed by the 1st and 2nd arrow, the usage and additional information provided about the usg command imply that it is installed.
+Let’s verify it is installed. As pointed by the 1st and 2nd arrow, the usage and additional information provided about the usg command imply that it is installed.<br>
+View: **[step5A5](screenshots/step5A5.png)**
 
-Step 6: Audit Your Ubuntu Server Against CIS Benchmark.
+## Step 6: Audit Your Ubuntu Server Against CIS Benchmark.
 Run the command in green to audit the Ubuntu server system against the CIS security benchmark. This process will take a couple of minutes to perform the system audit.
 
-Each audit is presented as Title, Rule, and Result. The audit result for each rule will either be pass or fail, as shown below.
+Each audit is presented as Title, Rule, and Result. The audit result for each rule will either be pass or fail, as shown below.<br>
+View: **[step6A1](screenshots/step6A1.png)**
+View: **[step6A2](screenshots/step6A2.png)**
 
-After it successfully performed the audit, the audit report can be found in the path I highlighted in yellow. Note also that the report is given in two formats, as .html and .XML, as pointed to by the 1st and 2nd arrow.
+After it successfully performed the audit, the audit report can be found in the path I highlighted in yellow. Note also that the report is given in two formats, as .html and .XML, as pointed to by the 1st and 2nd arrow.<br>
+View: **[step6A3](screenshots/step6A3.png)**
 
-Step 7: Access and open the Audit Report.
+## Step 7: Access and open the Audit Report.
 The /var/lib/ directory is owned by system services, so most subfolders require sudo or completely switch to a “root user” for you to be able to access the subfolders in /var/lib, where the audit and fix reports are saved. 
 
 Let's temporarily switch to a root user and navigate to the /usg/ folder by running cd /var/lib/usg/ to view our audit reports, which are highlighted in yellow and pink below. Type “exit” to switch back to a regular user at any time.
 
-A regular user prompt is signified with a dollar sign $ as pointed to by the 1st arrow. When we switch to a root user by running sudo -i, the prompt symbol changes to a hash sign # as pointed by the 3rd arrow. When we try printing the working directory pwd, you can see that it is /root as pointed by the 2nd arrow.
+A regular user prompt is signified with a dollar sign $ as pointed to by the 1st arrow. When we switch to a root user by running sudo -i, the prompt symbol changes to a hash sign # as pointed by the 3rd arrow. When we try printing the working directory pwd, you can see that it is /root as pointed by the 2nd arrow.<br>
+View: **[step7A](screenshots/step7A.png)**
 
 Alternatively, we can copy all the reports to the home directory for easier viewing without switching to the root user. We can then work with it later or copy the files from the home directory to our host machine. Since I am logged in as a root user, there is no need to use sudo in the command below.
-
+```bash
 cp /var/lib/usg/*.* ~/
+```
 
-The * means all file names with zero or more characters length, followed by a period (.), and then all file extensions with zero or more characters length. This will copy all files that are in the /var/lib/usg/ folder that satisfy the regular expression *.* 
+The `*` means all file names with zero or more characters length, followed by a period `.`, and then all file extensions with zero or more characters length. This will copy all files that are in the `/var/lib/usg/` folder that satisfy the regular expression `*.*`
 
-The ~/ means home directory (in my case, it is /home/agbuenoch).  Navigate to the home directory, and you will see all the files copied from /var/lib/usg/ directory in the home directory.
+The `~/` means home directory (in my case, it is `/home/agbuenoch`).  Navigate to the home directory, and you will see all the files copied from the `/var/lib/usg/` directory in the home directory.
 
 The 1st arrow points to the dollar sign, implying we are currently operating as a regular user. Run whoami to print out the current username as pointed to by the 2nd arrow. The command pwd will print the current directory of the regular user, which is pointed to by the 3rd arrow.
 
 The command sudo -i will switch the regular user to the root user as pointed to by the arrow immediately below the line where we run the sudo command. The hash symbol pointed to by the 4th arrow indicates we are now operating as the root user, and when you run pwd, it prints out that we are in the root directory, as pointed out by the 5th arrow. 
 
-Still operating as the root user, we change the directory to /var/lib/usg/, and we run ls -l to print out all files and directories within the current directory (/var/lib/usg/). The 6th arrow points to the files residing in the /usg/ directory.
+Still operating as the root user, we change the directory to `/var/lib/usg/`, and we run `ls -l` to print out all files and directories within the current directory `/var/lib/usg/`. The 6th arrow points to the files residing in the `/usg/` directory.
 
-The command cp ./*.* ~/ copied all the files (*.*) from the current directory (./) to the home directory (~/). Run exit to log out the root user as pointed to by the 7th arrow, back to the regular user as pointed to by the 8th arrow, which now shows a dollar sign. At this point, we run whoami and pwd, and it prints the regular username (agbuenoch) and current directory (/home/agbuenoch pointed by the 9th arrow), respectively.
+The command `cp ./*.* ~/` copied all the files `*.*` from the current directory `./` to the home directory `~/`. Run exit to log out the root user as pointed to by the 7th arrow, back to the regular user as pointed to by the 8th arrow, which now shows a dollar sign. At this point, we run whoami and pwd, and it prints the regular username `agbuenoch` and current directory `/home/agbuenoch` pointed by the 9th arrow, respectively.
 
-Therefore, when we run ls -l, we can see the files we copied from /var/lib/usg/ as the root user in the home directory as pointed to by the 10th arrow.
+Therefore, when we run `ls -l`, we can see the files we copied from `/var/lib/usg/` as the root user in the home directory as pointed to by the 10th arrow.<br>
+View: **[step7B](screenshots/step7B.png)**
 
-Option A: How to view the .html file audit report.
+### Option A: How to view the .html file audit report.
 Ubuntu Server is CLI-based; it does not have a GUI (Graphical User Interface) or a DISPLAY environment to launch GUI apps. To view the report, both files (.html and .xml) can be copied to the host machine (the computer running VMware) or to another Windows client virtual machine.
 
-The two audit report files generated are pointed to by the 1st and 2nd arrows.
+The two audit report files generated are pointed to by the 1st and 2nd arrows.<br>
+View: **[step7C](screenshots/step7C.png)**
 
 If you have a Windows Subsystem for Linux (WSL) running on a Windows client machine, with SSH installed and enabled, run the command below on your Ubuntu server terminal to copy the .html and .xml file report to the Windows client machine so you can view it in a browser.
-
+```bash
 sudo scp /ubuntu-server/path/to/filename <WSL-username>@<WSL-ip>:"/mnt/c/Users/windows-nameofuser/.../destination/"
+```
+View: **[step7D](screenshots/step7D.png)**
 
-The article: File Sharing using scp and rsync explains how to copy/share files between an Ubuntu server and a Windows client machine.
+The article: [File Sharing using scp and rsync](https://www.linkedin.com/pulse/file-sharing-using-scp-rsync-enoch-agbu-yeynf) explains how to copy/share files between an Ubuntu server and a Windows client machine.
 
 After running the command, you will be authenticated to provide the source system (Ubuntu server VM) user password as pointed to by the 1st arrow. You will also be authenticated against the Windows client machine (the destination system) you want to copy to, as pointed to by the 2nd arrow. The .html file was successfully copied to the Windows client machine as pointed to by the 3rd arrow and the 4th arrow, showing that the file was copied 100%.
 
