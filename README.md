@@ -35,7 +35,7 @@ Step 2: Update and Upgrade Your System.
 Run the green command to update and upgrade the Ubuntu server. As the arrow indicates, provide the Ubuntu server user password.
 
 `When you need help on how to install any command in Bash, and you have no idea how to do it, just type <command name> or <command name>--help, replacing <command name> with the actual command you want to install. The terminal will provide you with the official/appropriate name and command to install it.`<br>
-**[step2A1](screenshots/step2A1.png)**
+**[step2A1](step2A1.png)**
 
 Step 3: Install “Ubuntu Pro Client”.
 The “Ubuntu Pro client” is a command-line utility (pro) that connects your Ubuntu machine to Ubuntu Pro services like Extended Security Maintenance (ESM), Compliance tools like USG (Ubuntu Security Guide), Federal Information Processing Standards (FIPS) 140-2 certified cryptographic modules (for enterprise/government compliance), and more.
