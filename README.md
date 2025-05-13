@@ -30,7 +30,7 @@ Replace `<command name>` with the actual command you want to install. The termin
 The above step has been explicitly explained in the article [Installing Ubuntu Server 'Installer Image’ on VMware Workstation Pro](https://www.linkedin.com/pulse/installing-ubuntu-server-installer-image-vmware-workstation-agbu-pjidc?).
 
 ## Step 2: Update and Upgrade Your System.
-Run the green command to update and upgrade the Ubuntu server. As the arrow indicates, provide the Ubuntu server user password.
+Run the green command to update and upgrade the Ubuntu server. As the arrow indicates, provide the Ubuntu server user password.<br>
 View: **[step2A1](screenshots/step2A1.png)**
 
 ## Step 3: Install “Ubuntu Pro Client”.
