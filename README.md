@@ -31,20 +31,22 @@ When you need help on how to install any command in Bash, and you have no idea h
 
 The above step has been explicitly explained in the article, Installing Ubuntu Server 'Installer Image’ on VMware Workstation Pro.
 
-Step 2: Update and Upgrade Your System.
+## Step 2: Update and Upgrade Your System.
 Run the green command to update and upgrade the Ubuntu server. As the arrow indicates, provide the Ubuntu server user password.
 
 `When you need help on how to install any command in Bash, and you have no idea how to do it, just type <command name> or <command name>--help, replacing <command name> with the actual command you want to install. The terminal will provide you with the official/appropriate name and command to install it.`<br>
-**[step2A1](step2A1.png)**
+View: **[step2A1](screenshots/step2A1.png)**
 
-Step 3: Install “Ubuntu Pro Client”.
+## Step 3: Install “Ubuntu Pro Client”.
 The “Ubuntu Pro client” is a command-line utility (pro) that connects your Ubuntu machine to Ubuntu Pro services like Extended Security Maintenance (ESM), Compliance tools like USG (Ubuntu Security Guide), Federal Information Processing Standards (FIPS) 140-2 certified cryptographic modules (for enterprise/government compliance), and more.
 
 Run the command in green and provide the Ubuntu server user password when prompted, as pointed to by the 1st arrow. The 2nd, 3rd and 4th arrows point to the sequential steps for the installation of the Ubuntu Pro Client.
+View: **[step3A1](screenshots/step3A1.png)**
 
 After it successfully installs the “pro” command-line tool. Let's verify/confirm that the “pro” command is installed in our terminal.
 
 As pointed out by the 1st arrow, if the command is installed, the terminal will present you with the usage guide on how to use the command, and other vital information about the command as pointed to by the 2nd arrow.
+View: **[step3A2](screenshots/step3A2.png)**
 
 Step 4: Verify and view all Ubuntu Pro Services.
 Let's view all the Ubuntu Pro services that Ubuntu Pro clients can access by running the command in green. As pointed to by the 1st arrow, the esm-apps service is enabled (This was done by completing step 1 above), which offers the Ubuntu system an extended 10+ years of security maintenance. The USG service is currently disabled as pointed to by the 2nd arrow. The 3rd arrow shows how to enable any of the Ubuntu Pro services, which can be achieved by using the Ubuntu Pro client (i.e pro command). This must be enabled so that we can use the service to perform an audit and fix our Ubuntu system following the CIS benchmark security. The 4th arrow points to the statement that we are using or subscribed to Ubuntu Pro on this Ubuntu system.
