@@ -129,59 +129,77 @@ The article: [File Sharing using scp and rsync](https://www.linkedin.com/pulse/f
 After running the command, you will be authenticated to provide the source system (Ubuntu server VM) user password as pointed to by the 1st arrow. You will also be authenticated against the Windows client machine (the destination system) you want to copy to, as pointed to by the 2nd arrow. The .html file was successfully copied to the Windows client machine as pointed to by the 3rd arrow and the 4th arrow, showing that the file was copied 100%.
 
 Voila! The USG report file copied to the Windows client machine desktop is opened from the desktop as pointed to by the 1st arrow, using the Chrome browser.
+View: **[step7E](screenshots/step7E.png)**
 
 Scroll through to view the security checks that passed and/or failed, including other security statistics. The 1st arrow points to the target system that was audited, and the 2nd arrow points to the username that performed the audit.
+View: **[step7F](screenshots/step7F.png)**
 
 Scrolling further down is the compliance and scoring. The Ubuntu server failed to satisfy the conditions of 124 rules. 224 conditions rules were passed, and 124 failed, with a 70.87% pass rate as pointed by the 4th arrow. This report will be compared with the subsequent report generated after applying the CIS benchmark security.
+View: **[step7G](screenshots/step7G.png)**
 
-Option B: How to view the .xml file audit report.
+## Option B: How to view the .xml file audit report.
 The .xml file can be copied to and viewed on the host machine with any browser or code editor (like VS Code Studio or Sublime). To copy the .xml file, run exactly the above command shown in the screenshot above, replacing the .html file name with the .xml file name.
 
 Viewing the .xml file in VS Code.
+View: **[step7H](screenshots/step7H.png)**
 
 You can view the .xml file right in the Ubuntu server terminal like any text file, although it may look unreadable/unorganised.
 
 Scroll through the file neatly by using the “less” command, press ENTER to keep reading through each page, and press CTRL Z to opt out of the reading.
+View: **[step7I](screenshots/step7I.png)**
 
 After running the command above, below is a snippet of the .xml file contents.
+View: **[step7J](screenshots/step7J.png)**
 
-Step 8: Apply CIS Benchmark Fixes Automatically.
-HIGHLY RECOMMENDED: Before applying the CIS benchmark security hardening, it's best to back up your virtual machine (VM) or take a snapshot. We will take a snapshot of the VM. While your Ubuntu server is running, follow the marked arrows sequentially to take a snapshot of the server. This is important because you can easily roll back to your Ubuntu server stable version/state in the event you break something or get stuck somewhere in your server.
+## Step 8: Apply CIS Benchmark Fixes Automatically.
+HIGHLY RECOMMENDED: Before applying the CIS benchmark security hardening, it's best to back up your virtual machine (VM) or take a snapshot. We will take a snapshot of the VM. While your Ubuntu server is running, follow the marked arrows sequentially to take a snapshot of the server. This is important because you can easily roll back to your Ubuntu server stable version/state in the event you break something or get stuck somewhere in your server.<br>
+View: **[step8A](screenshots/step8A.png)**
 
-Provide a snapshot name of your choice as pointed by the 1st arrow.
+Provide a snapshot name of your choice as pointed by the 1st arrow.<br>
+View: **[step8B](screenshots/step8B.png)**
 
-To revert to any of your snapshots, follow the sequence of the arrows below and click on the name of the snapshot you want to revert to. The 3rd arrow points to the name of a snapshot I created.
+To revert to any of your snapshots, follow the sequence of the arrows below and click on the name of the snapshot you want to revert to. The 3rd arrow points to the name of a snapshot I created.<br>
+View: **[step8C](screenshots/step8C.png)**
 
 We have saved the current state of the freshly installed Ubuntu server using a snapshot. Let’s apply the security recommendations:
 
 Run the command in green, and provide the Ubuntu server password as pointed to by the 1st arrow for authentication before the CIS benchmark is applied. Before the CIS benchmark security is fixed/applied, the system will always be audited first, as pointed out by the 2nd arrow. Each time you run the command to fix/apply the CIS benchmark, an audit must first be carried out. If you read along to the second line of the line pointed to by the 2nd arrow, you will see --results followed by a path, this is where the audit report will be saved.
+View: **[step8D](screenshots/step8D.png)**
 
 The 1st arrow points to just a part of the audit carried out. After successfully auditing the system, the CIS benchmark will be applied. The 1st, 2nd and 3rd arrows point to the system files that will get executed to implement the CIS benchmark security. The 4th arrow points to the commencement of the fixing process, starting with the first one remediating rule 1/402 down until it remediates 402/402.
+View: **[step8D2](screenshots/step8D2.png)**
 
-The USG fix is done as pointed to by the 1st arrow.
+The USG fix is done as pointed to by the 1st arrow.<br>
 
 After remediating rule 402/402, reboot the system to complete the process, as pointed to by the 2nd arrow. Perform another audit as pointed to by the 3rd arrow, after you have applied the CIS benchmark security. This will help to compare whether the security hardening has improved.
 
-Run sudo reboot to reboot the server as shown in the screenshot below.
+Run `sudo reboot` to reboot the server as shown in the screenshot below.<br>
+View: **[step8D3](screenshots/step8D3.png)**
 
 This fix process will: Harden SSH settings, configure file permissions, disable unnecessary services, apply password policies, and more. The Ubuntu server security is hardened and stricter now, as pointed out by the 1st arrow.
+View: **[step8D4](screenshots/step8D4.png)**
 
-Step 9: Re-audit After Reboot.
+## Step 9: Re-audit After Reboot.
 After reboot, rerun the audit, and compare the audit report with the previous report generated before applying the CIS benchmark security hardening:
 
 Before running the audit, let's check and mark the audit report generated earlier, before we applied the CIS benchmark security above in step 8. The 1st and 2nd arrows point to the audit report generated from the last audit we performed in step 6. The other reports you see were generated when we ran the fix command to apply the CIS benchmark security. I have run the fix command multiple times, which is why you can see multiple reports there. Remember, each time we apply the CIS benchmark, an audit is first performed before the fix.
+View: **[step9A](screenshots/step9A.png)**
 
 Run sudo usg audit cis_level1_server to check the compliance scores after we have fixed/applied the CIS benchmark security.
 
 Currently, we are operating as the root user, as pointed to by the 1st arrow. Run exit to log out from the root user pointed to by the 2nd arrow. The 3rd arrow points to the dollar sign $, meaning a regular user.
 
 After running the audit command, the 4th arrow points to the flag/option --result, meanwhile the 5th arrow points to the path/directory where the result is stored (/var/lib/usg/), the .xml file is the file name containing the audit report.
+View: **[step9B](screenshots/step9B.png)**
 
 Just as shown above, once the audit is complete, the 1st arrow points that the audit is complete and shows us where to find the audit report as pointed to by the 2nd and 3rd arrows.
+View: **[step9C](screenshots/step9C.png)**
 
 To access the audit report, we need root user privileges. Run sudo -i to switch to the root user. We navigate to the /var/lib/usg/ directory and ls -l out the path contents. The 1st and 2nd arrows point to the audit report (.html and .xml) just generated.
+View: **[step9D](screenshots/step9D.png)**
 
 Run the command pointed to by the 1st arrow to copy the .html file pointed to by the 2nd arrow to the home directory so that we can access it anytime without root user privileges.
+View: **[step9E](screenshots/step9E.png)**
 
 After we have successfully copied the file to the home directory. Let's copy the file to a Windows client machine so that we can view the .html file.
 
@@ -192,8 +210,10 @@ To remotely (SSH) connect to the Ubuntu server, run:
 ssh <Ubuntu-server-username>@<Ubuntu-server-ip> 
 
 You will be required to enter the remote machine (Ubuntu server VM) password to be able to connect to it. I have successfully remotely connected to the Ubuntu server, so I run whoami to print the Ubuntu server username as pointed out by 1st arrow, pwd to print the current directory as pointed out by 2nd arrow, and ls -l to list the directory contents as pointed out by 3rd arrow. The 4th arrow points to the command (spanning two lines) that will copy the .html file from the remote machine (Ubuntu server VM) home directory to the Windows client machine desktop path. You will provide the destination system (Windows client machine) password to authenticate you to copy to the machine, as pointed out by the 5th arrow. The 6th and 7th arrows point to the file successfully copied to the Windows client machine.
+View: **[step9F](screenshots/step9F.png)**
 
 Let’s confirm that the compliance score has improved. Below is a snippet of the audit report before we applied the CIS benchmark security, with just a 70.87% success rate and 124 rule results failed.
+View: **[step9F2](screenshots/step9F2.png)**
 
 Meanwhile, here is the audit report after applying the CIS benchmark security. There is a clear improvement compared to the initial report, where only 9 rule conditions failed.
 
