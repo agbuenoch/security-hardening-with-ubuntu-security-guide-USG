@@ -1,16 +1,16 @@
 # security-hardening-with-ubuntu-security-guide-USG
 
-Check out the **[screenshots](screenshots)** folder for the screenshots of the entire process.
+**Check out the [screenshots](screenshots) folder for all the screenshots.**
 
 In the article [Installing Ubuntu Server 'Installer Image’ On VMware Workstation Pro](https://www.linkedin.com/pulse/installing-ubuntu-server-installer-image-vmware-workstation-agbu-pjidc), I walked through installing Ubuntu Server on VMware Workstation Pro. This article will guide you through the fundamental steps to secure the Ubuntu server before using it for log analysis, Wazuh management, or as a monitored endpoint.
 
-The Centre for Internet Security (CIS) benchmark has provided hundreds of configuration recommendations, but manually hardening and auditing a Linux system can be tedious and error-prone. 
+The [Centre for Internet Security (CIS)](https://www.cisecurity.org/) benchmark has provided hundreds of configuration recommendations, but manually hardening and auditing a Linux system can be tedious and error-prone. 
 
-Ubuntu Security Guide (USG) is a new and automated cybersecurity tool available with Ubuntu 20.04 LTS, and is part of Ubuntu Pro, installed using the “Ubuntu Pro client”. With USG, hardening an Ubuntu system becomes much easier. USG is used to harden and audit Ubuntu systems to check if they are still in compliance with the CIS Benchmark.
+Ubuntu Security Guide (USG) is a new and automated cybersecurity tool available with Ubuntu 20.04 LTS. It is part of Ubuntu Pro and installed using the “Ubuntu Pro client.” With USG, hardening an Ubuntu system becomes much easier. USG is used to harden and audit Ubuntu systems to check if they are still compliant with the CIS Benchmark.
 
 The Ubuntu Pro client is a tool designed to automate access to Ubuntu Pro services like Extended Security Maintenance (ESM), Ubuntu Security Guide (USG), Federal Information Processing Standards (FIPS), and more.
 
-> It is recommended to apply the security hardening on a freshly installed Ubuntu and not on a production system.`
+**> It is recommended to apply the security hardening on a freshly installed Ubuntu and not on a production system.**
 
 > Pre-requisite:
   You must have or enable “Ubuntu Pro” as a prerequisite for using Ubuntu Security Guide (USG), this is because USG is one of the services of “Ubuntu Pro”.
