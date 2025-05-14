@@ -6,7 +6,7 @@ In the article [Installing Ubuntu Server 'Installer Image’ On VMware Workstati
 
 The [Centre for Internet Security (CIS)](https://www.cisecurity.org/) benchmark has provided hundreds of configuration recommendations, but manually hardening and auditing a Linux system can be tedious and error-prone. 
 
-Ubuntu Security Guide (USG) is a new and automated cybersecurity tool available with Ubuntu 20.04 LTS. It is part of Ubuntu Pro and installed using the “Ubuntu Pro client.” With USG, hardening an Ubuntu system becomes much easier. USG is used to harden and audit Ubuntu systems to check if they are still compliant with the CIS Benchmark.
+[Ubuntu Security Guide (USG)](https://ubuntu.com/security/certifications/docs/usg) is a new and automated cybersecurity tool available with Ubuntu 20.04 LTS. It is part of [Ubuntu Pro Service](https://ubuntu.com/pro) and installed using the “Ubuntu Pro client.” With USG, hardening an Ubuntu system becomes much easier. USG is used to harden and audit Ubuntu systems to check if they are still compliant with the CIS Benchmark.
 
 The Ubuntu Pro client is a tool designed to automate access to Ubuntu Pro services like Extended Security Maintenance (ESM), Ubuntu Security Guide (USG), Federal Information Processing Standards (FIPS), and more.
 
@@ -223,7 +223,7 @@ The post-hardening audit results show significantly improved CIS Level 1 Server 
 **View: [step9I](screenshots/step9I.png)**
 
 ## LinkedIn Article.
-- [File Sharing Using scp and rsync](https://www.linkedin.com/pulse/file-sharing-using-scp-rsync-enoch-agbu-yeynf/)
+- [Ubuntu Server Security Hardening with Ubuntu Security Guide (USG)]([https://www.linkedin.com/pulse/file-sharing-using-scp-rsync-enoch-agbu-yeynf/](https://www.linkedin.com/pulse/ubuntu-server-security-hardening-guide-usg-enoch-agbu-qdj3f?)
 
 ## Connect with me.
 [🔗 LinkedIn](https://www.linkedin.com/in/agbuenoch)<br>
