@@ -223,7 +223,7 @@ The post-hardening audit results show significantly improved CIS Level 1 Server 
 **View: [step9I](screenshots/step9I.png)**
 
 ## LinkedIn Article.
-- [Ubuntu Server Security Hardening with Ubuntu Security Guide (USG)]([https://www.linkedin.com/pulse/file-sharing-using-scp-rsync-enoch-agbu-yeynf/](https://www.linkedin.com/pulse/ubuntu-server-security-hardening-guide-usg-enoch-agbu-qdj3f?)
+- [Ubuntu Server Security Hardening with Ubuntu Security Guide (USG)](https://www.linkedin.com/pulse/ubuntu-server-security-hardening-guide-usg-enoch-agbu-qdj3f?)
 
 ## Connect with me.
 [🔗 LinkedIn](https://www.linkedin.com/in/agbuenoch)<br>
