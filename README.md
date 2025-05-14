@@ -10,10 +10,11 @@ Ubuntu Security Guide (USG) is a new and automated cybersecurity tool available 
 
 The Ubuntu Pro client is a tool designed to automate access to Ubuntu Pro services like Extended Security Maintenance (ESM), Ubuntu Security Guide (USG), Federal Information Processing Standards (FIPS), and more.
 
-**> It is recommended to apply the security hardening on a freshly installed Ubuntu and not on a production system.**
+> **It is recommended to apply the security hardening on a freshly installed Ubuntu and not on a production system.**
 
 > Pre-requisite:
-  You must have or enable “Ubuntu Pro” as a prerequisite for using Ubuntu Security Guide (USG), this is because USG is one of the services of “Ubuntu Pro”.
+  You must have or enable “Ubuntu Pro” as a prerequisite for using Ubuntu Security Guide (USG), this is because USG is one of the   
+  services of “Ubuntu Pro”.
 
 When you need help on how to install any command in Bash, and you have no idea how to do it, just type:
 `<command name>`
