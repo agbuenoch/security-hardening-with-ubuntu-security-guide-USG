@@ -63,7 +63,7 @@ This will enable the Ubuntu Security Guide (USG) utility. Checking the Ubuntu Pr
 But I do not currently have the `usg` command installed yet on my Ubuntu server terminal, this will result in an error if you try to use the command.
 
 Let’s first confirm if the “usg” command is NOT installed. As pointed to by the 1st arrow, the command is not found; meanwhile, the 2nd arrow points to the statement that provides the command to install the intended command, i.e usg.<br>
-View: **[step5A3](screenshots/step5A3.png)**
+**View: [step5A3](screenshots/step5A3.png)**
 
 Run the command in green to install the “usg” command. As pointed by the 1st arrow, provide the Ubuntu server password when prompted.<br>
 **View: [step5A4](screenshots/step5A4.png)**
@@ -217,7 +217,7 @@ Meanwhile, here is the audit report after applying the CIS benchmark security. T
 **View: [step9G](screenshots/step9G.png)**
 
 The 1st arrow points to the target system audited, the 2nd arrow points to the username that performed the audit.<br>
-View: **[step9H](screenshots/step9H.png)**
+**View: [step9H](screenshots/step9H.png)**
 
 The post-hardening audit results show significantly improved CIS Level 1 Server Benchmark compliance, with only 9 rules, results that failed and a 92.24% success rate.<br>
 **View: [step9I](screenshots/step9I.png)**
